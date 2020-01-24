@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <head>
 <link href="/normalize.css" rel="stylesheet">
+<title>drew.nault</title>
+ <link href=<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet"
+ type="text/css"> 
+ <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker&display=swap" rel="stylesheet" 
+ type="text/css">
+ <script src="assets/jquery.js"></script>
 <style>
 header {
   text-align: center;
-  background-image: url("./Resources/drewocean.jpg");
+  background-image: url("./Resources/drewocean2.jpg");
   color: white;
   border: 5px solid white;
   background-repeat: no-repeat;
@@ -17,9 +23,9 @@ a {
 }
 h1 {
   font-size: 50px;
-  font-family: monospace;
+  font-family: Permanent Marker, cursive;
   border: 1px solid white;
-}
+}	
 img {
   margin: 10px 0px 0px 0px;
   border: 7px solid white;
@@ -30,6 +36,8 @@ img {
 li {
   display: inline;
   padding: 0px 10px 0px 10px;
+  width: 50px;
+  height: auto;
 }
 article {
   max-width: 800px;
@@ -37,7 +45,7 @@ article {
   margin: 0 auto;}
 h2 {
   font-size: 15px;
-  font-family: arial;
+  font-family: Amatic SC, cursive;
 }
 h3 {
 font-size: 10px;
@@ -47,6 +55,11 @@ button {
 font-size: 10px;
 font-family: arial;
 }
+.drewtree{
+width: 1000px;
+height: auto;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 36px;
@@ -60,7 +73,7 @@ font-family: arial;
 </head>
 <body>
 <header>
-<img src="https://i.pinimg.com/280x280_RS/74/27/00/742700319af9644cacd7a81b2c71717b.jpg">
+<img src=".\resources\drewface.jpg">
 <h1>Drew Nault</h1>
 <ul>
 <li> <a href="#">My Story</a></li>
@@ -68,27 +81,33 @@ font-family: arial;
 <li> <a href="#">Commission Work</a></li>
 </ul>
 </header>
+
 <article>
+<div class="drewtree">
 <img src=".\resources\drewtree.jpg">
+</div>
 <h2>The Edge</h2>
 <h3>04.20.18</h3>
 <button>Bid Now</button>
 </article>
+<div class="drewhand">
 <article>
 <img src=".\resources\drewhand.jpg">
 <h2>Engaged</h2>
 <h3>05.15.17</h3>
 <button>Bid Now</button>
 </article>
+</div>
+<div class="drewflower">
 <article>
 <img src=".\resources\drewflower.jpg">
 <h2>Flower Man</h2>
 <h3>08.13.18</h3>
 <button>Bid Now</button>
 </article>
-<script>
-$("article").on("click", function() {
-	alert("Your Bid Has Been Submitted!");
-	});
-</script>
+</div>
+ <script>
+  $("button").on("click", function() { 
+  $(this)alert("Your Bid Has Been Placed!")
+  </script>
 </body>
